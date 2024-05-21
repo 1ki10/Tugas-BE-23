@@ -15,9 +15,9 @@ func main() {
 		grade = "B+"
 	case studentScore >= 50:
 		grade = "B"
-	case studentScore >= 35:
+	case studentScore >= 49:
 		grade = "C"
-	default:
+	case studentScore >= 34:
 		grade = "D"
 	}
 
