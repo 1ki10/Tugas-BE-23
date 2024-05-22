@@ -1,26 +1,21 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-// Fungsi untuk menentukan apakah sebuah bilangan prima atau tidak
-func primeNumber(number int) bool {
-	if number <= 1 {
+// primeNumber memeriksa apakah suatu bilangan adalah bilangan prima.
+func primeNumber(bilangan int) bool {
+	// Langsung mengembalikan false jika bilangan kurang dari 2.
+	if bilangan < 2 {
 		return false
 	}
-	if number <= 3 {
-		return true
-	}
-	if number%2 == 0 || number%3 == 0 {
-		return false
-	}
-	for i := 5; i <= int(math.Sqrt(float64(number))); i += 6 {
-		if number%i == 0 || number%(i+2) == 0 {
+
+	// Mengecek faktor dari 2 sampai akar kuadrat dari bilangan.
+	for i := 2; i*i <= bilangan; i++ {
+		if bilangan%i == 0 {
 			return false
 		}
 	}
+
 	return true
 }
 
