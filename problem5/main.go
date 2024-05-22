@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-// Fungsi untuk menghitung pangkat
-func pangkat(base, pangkat int) int {
-	result := 1
-	for i := 0; i < pangkat; i++ {
-		result *= base
+// Fungsi menghitung pangkat dari sebuah bilangan.
+func pangkat(basis, eksponen int) int {
+	hasil := 1
+	for i := 0; i < eksponen; i++ {
+		hasil *= basis
 	}
-	return result
+	return hasil
 }
 
 func main() {
