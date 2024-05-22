@@ -15,5 +15,5 @@ func main() {
 	// Menghitung harga akhir setelah diskon
 	hargaAkhir := hargaAwal - jumlahDiskon
 
-	fmt.Printf("Harga yang harus dibayar adalah Rp. %.2f\n", hargaAkhir)
+	fmt.Println(hargaAkhir)
 }
