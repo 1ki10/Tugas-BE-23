@@ -22,5 +22,5 @@ func main() {
 	}
 
 	// Output
-	fmt.Printf("Nilai huruf: %s\n", grade)
+	fmt.Println(grade)
 }
