@@ -9,7 +9,7 @@ func main() {
 
 	//code disini
 
-	output := fmt.Sprintf("Hello %s! Saya Golang, bahasa yang sangat menyenangkan.", nama)
+	output := "Hello " + nama + "! Saya Golang, bahasa yang sangat menyenangkan"
 
 	// Mencetak hasil output
 	fmt.Println(output)
